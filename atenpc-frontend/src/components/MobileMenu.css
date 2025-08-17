@@ -1,0 +1,118 @@
+/* src/components/MobileMenu.css */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1002;
+}
+
+.mobile-menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  z-index: 1003;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--border-color, #E5E7EB);
+}
+
+.mobile-menu-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.mobile-menu-auth {
+  padding: 1rem 1.5rem;
+}
+
+.mobile-auth-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.mobile-auth-link {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0.8rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: block;
+}
+
+.mobile-auth-link.login {
+  background-color: var(--primary-color, #10B981);
+  color: white;
+}
+
+.mobile-auth-link.register {
+  background-color: transparent;
+  color: var(--primary-color, #10B981);
+  border: 1px solid var(--primary-color, #10B981);
+}
+
+.mobile-user-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-user-actions .mobile-auth-link {
+  border: 1px solid var(--border-color, #E5E7EB);
+  color: var(--text-dark, #1F2937);
+}
+
+.mobile-user-actions .logout {
+  color: var(--accent-red, #ef4056);
+  border: 1px solid var(--accent-red, #ef4056);
+  cursor: pointer;
+}
+
+.mobile-menu-separator {
+  height: 8px;
+  background-color: var(--background-light, #F9FAFB);
+  border-top: 1px solid var(--border-color, #E5E7EB);
+  border-bottom: 1px solid var(--border-color, #E5E7EB);
+}
+
+.mobile-menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.mobile-menu-list li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--text-dark, #1F2937);
+  border-bottom: 1px solid var(--border-color, #E5E7EB);
+  transition: background-color 0.2s ease;
+}
+
+.mobile-menu-list li a:hover {
+  background-color: #f8f9fa;
+}

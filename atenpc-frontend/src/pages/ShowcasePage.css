@@ -1,0 +1,45 @@
+/* src/pages/ShowcasePage.css */
+.showcase-container {
+    padding: 2rem 3rem;
+    background-color: #fff;
+    border-radius: 8px;
+    color: #333;
+}
+
+.showcase-container h1 {
+    border-bottom: 2px solid var(--primary-color, #10B981);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tech-stack {
+    margin-top: 2rem;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.tech-list li {
+    background-color: var(--background-light, #F9FAFB);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid var(--primary-color, #10B981);
+}
+
+.showcase-links {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color, #E5E7EB);
+}
+.showcase-links a {
+    margin-left: 1.5rem;
+    color: var(--primary-color, #10B981);
+    font-weight: 600;
+    text-decoration: none;
+}

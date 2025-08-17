@@ -1,0 +1,156 @@
+/* src/pages/ProductDetailPage.css */
+.product-detail-container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 45% 1fr 320px;
+    grid-template-areas:
+        "gallery info buybox"
+        "extras  extras ."
+    ;
+    gap: 2rem;
+}
+
+
+.product-gallery-column {
+    grid-area: gallery;
+}
+
+
+.product-info-column {
+    grid-area: info;
+}
+
+.product-buy-column {
+    grid-area: buybox;
+}
+
+
+.product-extra-details {
+    grid-area: extras;
+}
+
+
+.product-buy-column {
+    position: sticky;
+    top: 100px;
+}
+
+.specs-section,
+.review-section {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #f0f0f1;
+    margin-bottom: 2rem;
+}
+
+.specs-section h3,
+.review-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.specs-table th,
+.specs-table td {
+    padding: 1rem;
+    text-align: right;
+    border-bottom: 1px solid #f0f0f1;
+}
+
+.specs-table th {
+    background-color: #f8f9fa;
+    width: 30%;
+    font-weight: 600;
+}
+
+/* --- استایل‌های جدید برای محتوای جمع‌شونده --- */
+.collapsible-content {
+    max-height: 300px;
+    /* ارتفاع محدود در حالت جمع‌شده */
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.collapsible-content.expanded {
+    max-height: 2000px;
+    /* ارتفاع زیاد برای نمایش کامل محتوا */
+}
+
+.collapsible-content:not(.expanded)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(to top, white, transparent);
+}
+
+.expand-btn-desktop {
+    display: block;
+    margin: 1rem auto 0;
+    background: none;
+    border: none;
+    color: var(--primary-color, #10B981);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.expand-btn-mobile {
+    display: none;
+    /* در دسکتاپ مخفی است */
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* --- پایان استایل‌های جدید --- */
+
+/* واکنش‌گرایی */
+@media (max-width: 1200px) {
+    .product-detail-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "gallery info"
+            "buybox buybox"
+            "extras extras";
+    }
+
+    .product-buy-column {
+        position: static;
+        /* در این حالت دیگر چسبنده نیست */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-detail-container {
+        display: block;
+    }
+
+    .product-gallery-column,
+    .product-buy-column {
+        position: static;
+    }
+
+    .collapsible-content {
+        max-height: 150px;
+    }
+
+    .expand-btn-desktop {
+        display: none;
+        /* در موبایل مخفی می‌شود */
+    }
+
+    .expand-btn-mobile {
+        display: block;
+        /* در موبایل نمایش داده می‌شود */
+    }
+}

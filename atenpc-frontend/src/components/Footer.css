@@ -1,0 +1,123 @@
+/* src/components/Footer.css */
+.site-footer {
+  position: relative;
+  background-color: #ffffff;
+  color: #424750;
+  border-top: 1px solid #f0f0f1;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+.jump-to-top {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 50px;
+    background-color: #ffffff;
+    border: 1px solid #f0f0f1;
+    border-bottom: none;
+    color: #5a5f68;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    border-radius: 25px 25px 0 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+.jump-to-top-icon {
+    margin-right: 0.5rem;
+}
+
+.footer-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.footer-top-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+  border-bottom: 1px solid #f0f0f1;
+  flex-wrap: wrap;
+}
+.info-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  color: #5a5f68;
+  min-width: 150px;
+  text-align: center;
+}
+.info-item-icon {
+    width: 70px;
+    height: 70px;
+    fill: #5a5f68;
+}
+
+.footer-main-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.footer-column h4 {
+  color: #0c0c0c;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.footer-column ul { list-style: none; padding: 0; margin: 0; }
+.footer-column ul li { margin-bottom: 0.8rem; }
+.footer-column ul li a, .social-icons a { text-decoration: none; color: #5a5f68; }
+.footer-column ul li a:hover, .social-icons a:hover { color: #0c0c0c; }
+.footer-social-trust { display: flex; flex-direction: column; }
+.social-icons { 
+    display: flex; 
+    gap: 1rem; 
+    margin-bottom: 2rem;
+}
+.social-icons a { color: #5a5f68; }
+.social-icons svg { width: 35px; height: 35px; }
+.trust-seals { display: flex; gap: 1rem; align-items: center; }
+.seal-image { 
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #5a5f68;
+}
+
+@media (max-width: 992px) {
+    .footer-main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .footer-top-info {
+        gap: 1.5rem;
+    }
+    .footer-main-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .social-icons, .trust-seals {
+        justify-content: center;
+    }
+}

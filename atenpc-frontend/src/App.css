@@ -1,0 +1,54 @@
+/* src/App.css */
+body {
+  font-family: 'Yekan Bakh', sans-serif;
+  background-color: var(--background-light, #F9FAFB);
+  color: var(--text-dark, #1F2937);
+  margin: 0;
+}
+
+:root {
+  --primary-color: #10B981;       /* سبز نوآوری */
+  --text-dark: #1F2937;          /* خاکستری تیره برای متن */
+  --background-light: #F9FAFB;   /* خاکستری روشن برای پس‌زمینه */
+  --border-color: #E5E7EB;       /* خاکستری ملایم برای حاشیه‌ها */
+  --accent-red: #ef4056;         /* قرمز برای تخفیف‌ها (جهت حفظ حس فوریت) */
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  flex-grow: 1; 
+}
+
+.main-content {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.site-content {
+  width: 100%;
+  max-width: 1400px; /* حداکثر عرض محتوا */
+  margin: auto;  /* وسط‌چین کردن و ایجاد فاصله از بالا و پایین */
+  padding: 0 0.5rem; /* ایجاد فاصله یکسان از چپ و راست */
+  flex-grow: 1;
+  box-sizing: border-box; /* برای محاسبه صحیح padding */
+}
+
+.Toastify__toast-container {
+    z-index: 9999 !important;
+}
+
+@media (max-width: 768px) {
+  .Toastify__toast-container {
+    width: 90vw;
+    margin: 0 auto;
+    left: 5vw;
+    bottom: auto;
+    top: 1em;
+  }
+}

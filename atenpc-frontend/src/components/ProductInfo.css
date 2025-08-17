@@ -1,0 +1,40 @@
+/* src/components/ProductInfo.css */
+.product-info-container {
+  padding: 1rem;
+}
+
+.product-title {
+  font-size: 1.125rem; /* --- تغییر اصلی: فونت نام محصول --- */
+  font-weight: 700;
+  color: #212529;
+  margin-bottom: 1.5rem;
+}
+
+.about-item, .at-a-glance {
+  border-top: 1px solid #f0f0f1;
+  padding: 1.5rem 0;
+}
+
+.about-item h3, .at-a-glance h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-item p {
+  font-size: 1rem; /* --- تغییر اصلی: فونت درباره کالا --- */
+  color: #5a5f68;
+  line-height: 1.8;
+}
+
+.key-specs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.spec-box {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}

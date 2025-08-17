@@ -1,0 +1,33 @@
+/* src/components/SearchForm.css */
+.search-form-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f8f9fa;
+}
+
+.search-form-input {
+  flex-grow: 1;
+  border: none;
+  background-color: transparent;
+  padding: 0.2rem 1rem;
+  font-size: 0.8rem;
+  font-family: 'Yekan Bakh', sans-serif;
+}
+
+.search-form-input:focus {
+  outline: none;
+}
+
+.search-form-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 0 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Yekan Bakh', sans-serif;
+}

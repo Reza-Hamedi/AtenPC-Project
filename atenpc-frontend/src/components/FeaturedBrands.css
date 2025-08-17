@@ -1,0 +1,66 @@
+/* src/components/FeaturedBrands.css */
+.featured-brands-section {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 1rem 0 5rem 0; 
+  background-color: #CADCAE; 
+  clip-path: ellipse(100% 60% at 50% 40%);
+}
+
+.brands-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.brand-slide {
+  padding: 0 0.75rem;
+}
+
+.brand-logo-container {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e1;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.brand-logo-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.brand-logo {
+  max-width: 90%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+.brand-name {
+    font-weight: 600;
+    color: #555;
+}
+
+
+/* Media Query برای موبایل */
+@media (max-width: 768px) {
+
+    .featured-brands-section {
+      display: none;
+    }
+}

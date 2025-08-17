@@ -1,0 +1,24 @@
+/* src/pages/AddressPage.css */
+.address-page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.address-page-header h2{
+    margin-left: 1rem;
+}
+
+.address-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.address-card .ant-card-head-title {
+    font-weight: 700;
+}
+
+.address-card p {
+    margin-bottom: 0.5rem;
+}

@@ -1,0 +1,29 @@
+/* src/pages/ProductListPage.css */
+.product-list-container {
+  padding: 0 1rem;
+}
+
+.product-list-container h2, .product-section-title {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 2rem 0.90rem;
+}
+
+.loading-text, .no-results-container {
+  width: 100%;
+  text-align: center;
+  padding: 4rem 0;
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.no-results-container p {
+    margin: 0;
+}

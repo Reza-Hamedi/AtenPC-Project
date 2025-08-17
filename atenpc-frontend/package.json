@@ -1,0 +1,55 @@
+{
+  "name": "atenpc-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.26.7",
+    "axios": "^1.10.0",
+    "framer-motion": "^12.23.12",
+    "jwt-decode": "^4.0.0",
+    "leaflet": "^1.9.4",
+    "lottie-react": "^2.4.1",
+    "react": "^19.1.0",
+    "react-countdown": "^2.3.6",
+    "react-dom": "^19.1.0",
+    "react-ga4": "^2.1.0",
+    "react-google-recaptcha": "^3.1.0",
+    "react-lazy-load-image-component": "^1.6.3",
+    "react-leaflet": "^5.0.0",
+    "react-router-dom": "^7.7.0",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.30.3",
+    "react-toastify": "^11.0.5",
+    "slick-carousel": "^1.8.1",
+    "web-vitals": "^2.1.4",
+    "zxcvbn": "^4.4.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+/* src/components/BuyBox.css */
+.buy-box-container {
+  background-color: var(--background-light, #F9FAFB);
+  border: 1px solid var(--border-color, #E5E7EB);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.discount-badge-detail {
+  background-color: var(--accent-red, #ef4056);
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.price-section {
+  text-align: left;
+  border-bottom: 1px solid var(--border-color, #E5E7EB);
+  padding-bottom: 1rem;
+}
+
+.final-price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark, #1F2937);
+}
+
+.currency {
+  font-weight: 600;
+  margin-right: 0.5rem;
+  color: var(--text-dark, #1F2937);
+}
+
+.original-price {
+  color: #6c757d;
+  text-decoration: line-through;
+  margin-left: 1rem;
+}
+
+.stock-status {
+  font-weight: 600;
+  color: var(--primary-color, #10B981);
+}
+
+.out-of-stock {
+  color: var(--accent-red, #ef4056);
+}
+
+.add-to-cart-controls {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--border-color, #E5E7EB);
+  border-radius: 8px;
+  background-color: white;
+}
+
+.quantity-selector button {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--primary-color, #10B981);
+}
+
+.quantity-selector span {
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-dark, #1F2937);
+}
+
+.add-to-cart-btn {
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-family: 'Yekan Bakh', sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: var(--primary-color, #10B981);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #059669;
+  /* نسخه تیره‌تر سبز */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.shipping-info-box {
+  border-top: 1px solid var(--border-color, #E5E7EB);
+  padding-top: 1rem;
+}
+
+.shipping-info-box h4 {
+  margin: 0 0 0.8rem 0;
+  font-weight: 600;
+  color: var(--text-dark, #1F2937);
+}
+
+.shipping-methods-list {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.shipping-method-icon {
+  height: 28px;
+  width: auto;
+  max-width: 45px;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 4px;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .add-to-cart-controls {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .add-to-cart-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+    .final-price {
+        font-size: 1rem;
+    }
+    .price-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,36 @@
+/* src/components/QuickViewModal.css */
+.quick-view-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.quick-view-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.quick-view-short-desc {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.quick-view-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-view-details h2 {
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .quick-view-layout {
+        display: none;
+    }
+}

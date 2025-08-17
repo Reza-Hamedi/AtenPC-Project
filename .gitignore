@@ -1,0 +1,13 @@
+# Python
+venv/
+*.pyc
+__pycache__/
+db.sqlite3
+
+# Node
+atenpc-frontend/node_modules/
+atenpc-frontend/build/
+.DS_Store
+
+# VS Code
+.vscode/

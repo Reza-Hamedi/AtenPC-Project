@@ -1,0 +1,240 @@
+/* src/components/Header.css */
+.header-container {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1001;
+}
+
+.app-header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.header-main-left{
+    gap: 1rem;
+}
+.header-main,
+.header-bottom,
+.header-main-right,
+.header-main-left,
+.header-main-center,
+.header-extra-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-main {
+    justify-content: space-between;
+    height: 70px;
+    gap: 1.5rem;
+}
+
+.header-main-center {
+    flex-grow: 1;
+    padding: 0 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom {
+    gap: 1.5rem;
+    padding: 0.5rem;
+    border-top: 1px solid var(--border-color, #E5E7EB);
+}
+
+.category-menu-container {
+    position: relative;
+}
+
+/* استایل‌های عمومی */
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-aten {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary-color);
+}
+
+.category-menu-trigger {
+    background: none;
+    border: none;
+    font-family: 'Yekan Bakh', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-extra-nav {
+    gap: 1.5rem;
+}
+
+.services-dropdown {
+    position: relative;
+}
+
+.services-dropdown button {
+    background: none;
+    border: none;
+    font-family: 'Yekan Bakh', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: #4a4a4a;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 180px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-radius: 8px;
+    padding: 0.5rem 0;
+}
+
+.services-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.9rem;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.discount-shortcut-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--accent-red, #ef4056);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.discount-shortcut-btn svg,
+.category-menu-trigger svg {
+    width: 22px;
+    height: 22px;
+}
+
+.auth-link-button{
+    border: 1px solid var(--border-color, #E5E7EB);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-dark, #1F2937);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.welcome-link,
+.welcome-link:visited {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+    color: var(--text-dark, #1F2937);
+    transition: color 0.2s ease
+}
+.welcome-link:hover {
+  color: var(--primary-color);
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: var(--accent-red);
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cart-icon-link {
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background-color: var(--accent-red, #ef4056);
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-link-button svg,
+.welcome-link svg,
+.cart-icon-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* --- استایل‌های موبایل --- */
+.mobile-actions {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .header-main-center,
+    .desktop-auth,
+    .header-bottom {
+        display: none;
+    }
+
+    .mobile-actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hamburger-menu,
+    .mobile-search-trigger {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        line-height: 0;
+    }
+
+    .hamburger-menu svg,
+    .mobile-search-trigger svg {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo-link {
+    margin-right: 2rem;
+}
+}

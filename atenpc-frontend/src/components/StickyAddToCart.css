@@ -1,0 +1,54 @@
+/* src/components/StickyAddToCart.css */
+.sticky-fab-container {
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem; /* در حالت راست‌چین، در سمت چپ قرار می‌گیرد */
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.sticky-fab-button {
+    background-color: var(--primary-color, #10B981);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.sticky-fab-button:hover {
+    transform: scale(1.1);
+}
+
+.sticky-fab-button svg {
+    width: 28px;
+    height: 28px;
+}
+
+.sticky-price-tag {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.sticky-final-price {
+    font-weight: 700;
+    font-size: 1rem;
+}
+.sticky-original-price {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    color: #6c757d;
+}

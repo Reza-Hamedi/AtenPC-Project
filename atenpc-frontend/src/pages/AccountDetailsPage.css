@@ -1,0 +1,11 @@
+/* src/pages/AccountDetailsPage.css */
+.birthdate-input-group {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1.5fr;
+    gap: 0.5rem;
+}
+
+.birthdate-input-group .ant-input-number,
+.birthdate-input-group .ant-select {
+    width: 100%;
+}

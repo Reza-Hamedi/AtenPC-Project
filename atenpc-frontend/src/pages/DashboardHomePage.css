@@ -1,0 +1,53 @@
+/* src/pages/DashboardHomePage.css */
+.dashboard-home p.welcome-home {
+    font-size: 1.1rem;
+    color: #5a5f68;
+    margin-bottom: 2rem;
+}
+
+.dashboard-shortcuts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.shortcut-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: #3f4064;
+    border: 1px solid #f0f0f1;
+    transition: all 0.3s ease;
+}
+
+.shortcut-card:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+   border-color: var(--primary-color, #10B981);
+}
+
+
+.shortcut-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    stroke-width: 1.5;
+}
+
+.shortcut-card span {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+/* --- واکنش‌گرایی برای موبایل --- */
+@media (max-width: 768px) {
+    .dashboard-shortcuts {
+        grid-template-columns: 1fr;
+    }
+    .welcome-home {
+        text-align: justify;
+    }
+}

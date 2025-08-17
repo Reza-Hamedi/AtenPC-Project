@@ -1,0 +1,94 @@
+/* src/components/RelatedProducts.css */
+.related-products-section {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: var(--background-light, #F9FAFB);
+    border: 1px solid var(--border-color, #E5E7EB);
+    border-radius: 16px;
+    position: relative;
+}
+.related-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.related-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.related-products-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-dark, #1F2937);
+}
+
+.see-all-link {
+    text-decoration: none;
+    color: var(--primary-color, #10B981);
+    font-weight: 600;
+}
+
+.related-product-slide {
+    padding: 0 0.5rem;
+}
+
+.related-products-section .mini-product-card {
+    border-left: 1px solid var(--border-color, #E5E7EB);
+    border-radius: 0;
+    padding: 0.5rem;
+}
+.related-products-section .slick-track .slick-slide:last-child .mini-product-card {
+    border-left: none;
+}
+
+.slick-slider {
+    margin: 0 -0.5rem;
+}
+
+/* --- استایل دکمه‌های سفارشی --- */
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 10;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+.custom-arrow:hover {
+    transform: translateY(-50%) scale(1.1);
+}
+.custom-arrow:before {
+    content: '›';
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+.prev-arrow {
+    right: -22px;
+}
+.prev-arrow:before {
+    content: '‹';
+}
+.next-arrow {
+    left: -22px;
+}
+
+@media (max-width: 992px) {
+    .related-products-section {
+        display: none;
+    }
+}

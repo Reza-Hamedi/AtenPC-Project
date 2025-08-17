@@ -1,0 +1,173 @@
+/* src/components/SpecialOffers.css */
+.special-offers-section {
+    background: linear-gradient(135deg, #059669 0%, #10B981 50%, #0891B2 100%);
+    padding: 1rem 1rem 3rem 1rem;
+    margin: 0 auto;
+    border-radius: 16px;
+    max-width: 1320px;
+}
+
+.special-offers-container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.special-offers-layout {
+    display: flex;
+    align-items: stretch;
+}
+
+.intro-card-container {
+    flex-shrink: 0;
+    width: 250px;
+    padding: 0.5rem;
+}
+
+.offers-slider-container {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.special-offers-section .slick-track {
+    display: flex;
+    align-items: stretch;
+}
+
+.intro-slide-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.intro-slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1rem;
+    text-align: center;
+}
+
+.intro-slide-title {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.intro-slide-image {
+    width: 120px;
+    height: auto;
+}
+
+.intro-slide-timer {
+    display: flex;
+    gap: 0.3rem;
+    direction: ltr;
+    color: white;
+    font-weight: 700;
+}
+
+.timer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-box span:first-child {
+    background-color: white;
+    color: #3f4064;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+}
+
+.timer-box .timer-label {
+    font-size: 0.7rem;
+    color: white;
+    margin-top: 0.3rem;
+}
+
+.timer-separator {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    align-self: center;
+}
+
+.see-all-text {
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.offer-slide {
+    padding: 0 0.75rem;
+    height: 100%;
+}
+
+.special-offers-section .slick-dots {
+    bottom: -30px !important;
+}
+
+.special-offers-section .slick-dots li button:before {
+    font-size: 10px !important;
+    color: #fff !important;
+    opacity: 0.5;
+}
+
+.special-offers-section .slick-dots li.slick-active button:before {
+    opacity: 1;
+}
+
+.special-offers-section .product-card {
+    padding: 0.8rem;
+}
+
+.special-offers-section .product-card .product-image {
+    height: 120px;
+}
+
+.special-offers-section .product-card .product-name {
+    font-size: 0.75rem;
+    height: 35px;
+}
+
+.special-offers-section .product-card .final-price-card {
+    font-size: 0.9rem;
+}
+
+.special-offers-section .slick-prev,
+.special-offers-section .slick-next {
+    width: 35px !important;
+    height: 35px !important;
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    border-radius: 50% !important;
+}
+
+.special-offers-section .slick-prev {
+    left: 5px !important;
+}
+
+.special-offers-section .slick-next {
+    right: 5px !important;
+}
+
+.special-offers-section .slick-prev:before,
+.special-offers-section .slick-next:before {
+    color: #333 !important;
+    font-size: 14px !important;
+}
+
+@media (max-width: 768px) {
+    .special-offers-layout {
+        flex-direction: column;
+    }
+
+    .intro-card-container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+}

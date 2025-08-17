@@ -1,0 +1,27 @@
+/* src/components/Pagination.css */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 1.5rem;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Yekan Bakh', sans-serif;
+  font-size: 0.9rem;
+}
+
+.pagination-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination-info {
+  font-weight: 600;
+}
